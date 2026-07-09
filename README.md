@@ -11,18 +11,9 @@
 
 ## 대상 종목
 
-섹터 분산을 위해 아래 10개 대형주로 구성했다 (`src/config.py`에서 자유롭게 변경 가능):
+섹터별로 분산된 대형주 10종목으로 구성했다. 실제 목록은 [`src/config.py`](src/config.py)의 `TICKERS`를 참고 (자유롭게 변경 가능하며, 바뀌어도 이 README는 수정할 필요 없음).
 
-| 종목 | 섹터 |
-|---|---|
-| AAPL, MSFT, NVDA | Technology |
-| JPM, V | Financials |
-| JNJ, UNH | Healthcare |
-| XOM | Energy |
-| PG | Consumer Staples |
-| HD | Consumer Discretionary |
-
-벤치마크: **SPY** (S&P 500 ETF) · 분석 기간: 최근 5년
+벤치마크: **SPY** (S&P 500 ETF, `src/config.py`의 `BENCHMARK`) · 분석 기간: 최근 5년
 
 ## 무위험수익률(risk-free rate) 설정
 
